@@ -9,11 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BelajarKotlin02">
-        <activity android:name=".ImplementasiListView">
-
-
-
-        </activity>
+        <activity android:name=".ImplicitIntent"/>
+        <activity android:name=".ActivityImplementRecyclerView" />
+        <activity android:name=".ImplementasiListView" />
         <activity android:name=".MajorActivity" />
         <activity android:name=".Widget" />
         <activity android:name=".MainActivity">

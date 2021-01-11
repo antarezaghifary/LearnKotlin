@@ -25,7 +25,8 @@
         android:background="@color/blue"
         android:orientation="vertical">
         
-        <TextView
+        <EditText
+            android:id="@+id/textUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username"
@@ -33,7 +34,8 @@
             android:textColor="@color/white"
             android:textSize="18sp"/>
 
-        <TextView
+        <EditText
+            android:id="@+id/textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
