@@ -28,7 +28,8 @@ class Widget : AppCompatActivity() {
 
         buttonToast.setOnClickListener {
             Toast.makeText(applicationContext,"Ini adalah toast", Toast.LENGTH_LONG).show()
-            startActivity(Intent(this, ImplementasiListView::class.java))
+            //startActivity(Intent(this, ImplementasiListView::class.java))
+            startActivity(Intent(this, ActivityImplementRecyclerView::class.java))
         }
 
         buttonSnackBar.setOnClickListener {
