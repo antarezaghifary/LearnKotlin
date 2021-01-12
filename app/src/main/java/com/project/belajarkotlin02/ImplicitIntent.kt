@@ -12,8 +12,14 @@ class ImplicitIntent : AppCompatActivity() {
 
         val txtUser = findViewById<TextView>(R.id.textUser1)
         val txtPass = findViewById<TextView>(R.id.textPass)
-        txtUser.text = intent.getStringExtra("user")
-        txtPass.text = intent.getStringExtra("pass")
+
+        val getData = intent.getParcelableExtra<ModelLogin>("data")
+        txtUser.text = getData?.username
+        txtPass.text = getData?.password
+
+
+//        txtUser.text = intent.getStringExtra("user")
+//        txtPass.text = intent.getStringExtra("pass")
     }
 
     companion object {

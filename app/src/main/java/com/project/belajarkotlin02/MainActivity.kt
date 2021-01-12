@@ -18,9 +18,13 @@ class MainActivity : AppCompatActivity() {
 
         login.setOnClickListener {
             //startActivity(Intent(this, Widget::class.java))
+
+            val dataLogin = ModelLogin(textUsername.text.toString(), textPassword.text.toString())
             val intent = Intent(this, ImplicitIntent::class.java)
-            intent.putExtra("user", textUsername.text.toString())
-            intent.putExtra("pass", textPassword.text.toString())
+            intent.putExtra("data", dataLogin)
+//            intent.putExtra("user", textUsername.text.toString())
+//            intent.putExtra("pass", textPassword.text.toString())
+
             startActivity(intent)
         }
     }
